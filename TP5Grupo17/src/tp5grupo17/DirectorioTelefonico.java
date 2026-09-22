@@ -77,6 +77,7 @@ public class DirectorioTelefonico extends javax.swing.JFrame {
         jMenu2.add(jMenuItem4);
 
         jMenuItem5.setText("Buscar Telefono por Apellido");
+        jMenuItem5.addActionListener(this::jMenuItem5ActionPerformed);
         jMenu2.add(jMenuItem5);
 
         jMenuBar1.add(jMenu2);
@@ -121,6 +122,12 @@ public class DirectorioTelefonico extends javax.swing.JFrame {
        VistaPrincipal.add(busqueda);
        busqueda.setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+       VistaBuscarTelefono telefono = new VistaBuscarTelefono();
+       VistaPrincipal.add(telefono);
+       telefono.setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
