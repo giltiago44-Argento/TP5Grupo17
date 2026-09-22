@@ -50,9 +50,8 @@ public class Directorio {
     
     for (Long telefono : lista_clientes.keySet()) {
          Contacto contacto = lista_clientes.get(telefono);
-         if (contacto.ge) {
-            
-        }
+         
+        
         }
     
     return c;
