@@ -46,13 +46,12 @@ public class VistaBuscarCliente extends javax.swing.JInternalFrame {
 
         jLabel2.setText("Telefono: ");
 
+        jList1.addListSelectionListener(this::jList1ValueChanged);
         jScrollPane1.setViewportView(jList1);
 
         jLabel4.setText("Apellido:");
 
         jLabel5.setText("Ciudad:");
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "San Luis", "Merlo", "Villa Mercedes", "La Toma", "La Punta", "Juana Koslay" }));
 
         jLabel6.setText("Domicilio:");
 
@@ -61,6 +60,7 @@ public class VistaBuscarCliente extends javax.swing.JInternalFrame {
         jLabel7.setText("Nombre:");
 
         jButton1.setText("Salir");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -132,6 +132,14 @@ public class VistaBuscarCliente extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jList1ValueChanged
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
