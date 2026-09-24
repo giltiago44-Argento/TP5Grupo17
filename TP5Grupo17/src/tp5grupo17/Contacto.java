@@ -16,6 +16,23 @@ public class Contacto {
     private String direccion;
     private String ciudad;
 
+    public Contacto(int dni, String nombre, String apellido, String direccion, String ciudad) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.direccion = direccion;
+        this.ciudad = ciudad;
+    }
+
+    @Override
+    public String toString() {
+        return "Contacto{" + "dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion=" + direccion + ", ciudad=" + ciudad + '}';
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
  
 
     

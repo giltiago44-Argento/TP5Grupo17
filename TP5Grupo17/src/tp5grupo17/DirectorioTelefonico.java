@@ -4,12 +4,17 @@
  */
 package tp5grupo17;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  *
  * @author Julian
  */
 public class DirectorioTelefonico extends javax.swing.JFrame {
-    
+    static protected Set<String> ciudades = new HashSet<>();
+    static protected Directorio directorio= new Directorio();
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(DirectorioTelefonico.class.getName());
 
     /**
@@ -17,6 +22,22 @@ public class DirectorioTelefonico extends javax.swing.JFrame {
      */
     public DirectorioTelefonico() {
         initComponents();
+    }
+
+    public static Set<String> getCiudades() {
+        return ciudades;
+    }
+
+    public static void setCiudades(Set<String> ciudades) {
+        DirectorioTelefonico.ciudades = ciudades;
+    }
+
+    public static Directorio getDirectorio() {
+        return directorio;
+    }
+
+    public static void setDirectorio(Directorio directorio) {
+        DirectorioTelefonico.directorio = directorio;
     }
 
     /**
@@ -54,11 +75,11 @@ public class DirectorioTelefonico extends javax.swing.JFrame {
         VistaPrincipal.setLayout(VistaPrincipalLayout);
         VistaPrincipalLayout.setHorizontalGroup(
             VistaPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 870, Short.MAX_VALUE)
+            .addGap(0, 782, Short.MAX_VALUE)
         );
         VistaPrincipalLayout.setVerticalGroup(
             VistaPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 457, Short.MAX_VALUE)
+            .addGap(0, 517, Short.MAX_VALUE)
         );
 
         jMenu1.setText("Cliente");
